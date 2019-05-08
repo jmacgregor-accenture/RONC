@@ -15,3 +15,4 @@ script: # These commands are executed in the Travis VM just like you would on yo
   - ./Scripts/backEndBuildTest
   - ./Scripts/frontEndBuildTest
   - ./Scripts/integrationBuildTest
+  - ./Scripts/cleanUpScript
