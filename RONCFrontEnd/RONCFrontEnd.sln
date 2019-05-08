@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RONCFrontEnd.React", "RONCFrontEnd.React\RONCFrontEnd.React.csproj", "{296AAF43-1992-4D8B-A2C8-8177A955389B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RONCFrontEnd.IntegrationTests", "RONCFrontEnd.IntegrationTests\RONCFrontEnd.IntegrationTests.csproj", "{1321AC09-A3D2-421F-A8EC-0176000B02D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{296AAF43-1992-4D8B-A2C8-8177A955389B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296AAF43-1992-4D8B-A2C8-8177A955389B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296AAF43-1992-4D8B-A2C8-8177A955389B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296AAF43-1992-4D8B-A2C8-8177A955389B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1321AC09-A3D2-421F-A8EC-0176000B02D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1321AC09-A3D2-421F-A8EC-0176000B02D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1321AC09-A3D2-421F-A8EC-0176000B02D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1321AC09-A3D2-421F-A8EC-0176000B02D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

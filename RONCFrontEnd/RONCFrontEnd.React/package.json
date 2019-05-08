@@ -1,0 +1,35 @@
+{
+  "name": "RevengeOfTheNewsChallenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "wbp": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/preset-env": "7.4.3",
+    "@babel/preset-react": "7.0.0",
+    "babel-jest": "24.7.1",
+    "babel-loader": "8.0.5",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.12.1",
+    "isomorphic-fetch": "2.2.1",
+    "jest": "24.7.1",
+    "popper.js": "1.15.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "uglifyjs-webpack-plugin": "2.1.2",
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
+  }
+}

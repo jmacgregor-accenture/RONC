@@ -1,0 +1,30 @@
+## Rider template created a .gitignore in GitIgnoreDemo.Web AND GitIgnoreDemo.Web/ClientApp
+
+# MacOS Silliness
+.DS_Store
+
+# JetBrains
+.idea/
+
+# User Config Files
+*.user
+
+# .NET Build Folders
+**/bin/
+**/obj/
+
+# Development Configuration
+appsettings.Development.json
+
+# Node items
+**/node_modules
+/coverage
+/build
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+**/lib
+
+/Certificate/*

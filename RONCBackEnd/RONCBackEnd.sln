@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RONCBackEnd.WebApi", "RONCBackEnd.WebApi\RONCBackEnd.WebApi.csproj", "{F04259B6-CB4A-4A55-97F7-1BD1A3C4731A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RONCBackEnd.Tests", "RONCBackEnd.Tests\RONCBackEnd.Tests.csproj", "{D089895F-B003-44E5-A69A-D3C75CD0AFC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F04259B6-CB4A-4A55-97F7-1BD1A3C4731A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04259B6-CB4A-4A55-97F7-1BD1A3C4731A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04259B6-CB4A-4A55-97F7-1BD1A3C4731A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04259B6-CB4A-4A55-97F7-1BD1A3C4731A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D089895F-B003-44E5-A69A-D3C75CD0AFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D089895F-B003-44E5-A69A-D3C75CD0AFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D089895F-B003-44E5-A69A-D3C75CD0AFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D089895F-B003-44E5-A69A-D3C75CD0AFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
