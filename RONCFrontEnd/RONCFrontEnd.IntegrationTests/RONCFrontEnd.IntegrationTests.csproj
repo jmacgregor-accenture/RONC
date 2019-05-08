@@ -17,15 +17,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="bin\chromedriver74_0_3729_6">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
-    </ItemGroup>
-
-    <ItemGroup>
       <None Update="geckodriver">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="bin" />
     </ItemGroup>
 
 </Project>
