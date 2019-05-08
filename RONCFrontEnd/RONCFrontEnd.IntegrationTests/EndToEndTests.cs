@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Threading;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Chrome;
 using Shouldly;
@@ -12,14 +13,10 @@ namespace RONCFrontEnd.IntegrationTests
         [Fact]
         public void HomePageIsCorrect()
         {
-            var chromeOptions = new ChromeOptions();
-            chromeOptions.AddArguments("headless");
-            
-            //var webdriver = new ChromeDriver(Environment.CurrentDirectory, chromeOptions);
-            
+            var service = FirefoxDriverService.CreateDefaultService(Environment.CurrentDirectory, "geckodriver");   
             var firefoxOptions = new FirefoxOptions();
             firefoxOptions.AddArgument("--headless");
-            var webdriver = new FirefoxDriver(firefoxOptions);
+            var webdriver = new FirefoxDriver(service,firefoxOptions);
             
             webdriver.Navigate().GoToUrl("http://localhost:5000/");
             
