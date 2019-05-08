@@ -1,16 +1,25 @@
 using System;
-using Xunit;
+using System.IO;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
 using Shouldly;
+using Xunit;
 
-namespace RevengeOfTheNewsChallenger.IntegrationTests
+namespace RONCFrontEnd.IntegrationTests
 {
     public class EndToEndTests
     {
         [Fact]
         public void HomePageIsCorrect()
         {
-            var webdriver = new FirefoxDriver();
+            var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArguments("headless");
+            
+            //var webdriver = new ChromeDriver(Environment.CurrentDirectory, chromeOptions);
+            
+            var firefoxOptions = new FirefoxOptions();
+            firefoxOptions.AddArgument("--headless");
+            var webdriver = new FirefoxDriver(firefoxOptions);
             
             webdriver.Navigate().GoToUrl("http://localhost:5000/");
             

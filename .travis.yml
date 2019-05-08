@@ -12,7 +12,7 @@ script: # These commands are executed in the Travis VM just like you would on yo
   # - cd /home/travis/build/<yourTravisAccount>/<yourRepoRootDirectory>/.../<yourSolutionDirectory>/
   # Use these to build the project without tests
   # if your project has tests, you can skip "restore" and "build" and just use "test" command
-  - ./Scripts/backEndBuildTest
-  - ./Scripts/frontEndBuildTest
+  #- ./Scripts/backEndBuildTest
+  #- ./Scripts/frontEndBuildTest
   - ./Scripts/integrationBuildTest
   - ./Scripts/cleanUpScript
