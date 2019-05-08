@@ -1,3 +1,4 @@
+using System;
 using Xunit;
 using OpenQA.Selenium.Firefox;
 using Shouldly;
@@ -12,12 +13,21 @@ namespace RevengeOfTheNewsChallenger.IntegrationTests
             var webdriver = new FirefoxDriver();
             
             webdriver.Navigate().GoToUrl("http://localhost:5000/");
+            
+            //Thread.Sleep(TimeSpan.FromSeconds(5));
 
             var div = webdriver.FindElementByTagName("div");
             
-            div.Text.ShouldBe("biggun");
+            try
+            {
+                div.Text.ShouldBe("biggun");
+            }
+            finally
+            {
+                webdriver.Quit();
+            }
             
-            webdriver.Quit();
+            
         }
     }
 }
