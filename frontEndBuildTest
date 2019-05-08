@@ -1,0 +1,5 @@
+#!/bin/bash -ue
+
+cd ./RONCFrontEnd/RONCFrontEnd.React
+npm install
+npm run test

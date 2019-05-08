@@ -1,0 +1,5 @@
+#!/bin/bash -ue
+
+cd ./RONCBackEnd/
+
+dotnet test

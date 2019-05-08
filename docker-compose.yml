@@ -1,14 +1,12 @@
 version: '3'
 services:
   frontend:
-    build: './RevengeOfNewsChallenger'
+    build: './RONCFrontEnd'
     ports: 
       - "5000:80"
     volumes:
-      - ./Certificate/server.crt:/etc/ssl/certs/server.crt
+      - ./RONCFrontEnd/Certificate/server.crt:/etc/ssl/certs/server.crt
   backend:
-    build: './RevengeOfNewsChallengerBackEnd'
-    ports:
-      - "8080:80"
-  tests:
-    build: 'RevengeOfTheNewsChallenger.IntegrationTests'
+   build: './RONCBackEnd'
+   ports:
+     - "8080:80"

@@ -8,10 +8,10 @@ export default class App extends Component{
             .then(response => response.json())
             //.then(jsonstring => console.log(JSON.parse(jsonstring)))
             .then(data => {
-                console.log('Data Is: ' + data);
+                // console.log('Data Is: ' + data);
                 this.setState({result: data})})
             .catch(error => {
-                console.log("In the error");
+                // console.log("In the error");
                 this.setState({ result: error})
             })
     }

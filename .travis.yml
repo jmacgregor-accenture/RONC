@@ -10,9 +10,7 @@ dotnet: 2.2
 script: # These commands are executed in the Travis VM just like you would on your local machine
   # Use a "cd" command to move the Travis command line prompt into your solution directory
   # - cd /home/travis/build/<yourTravisAccount>/<yourRepoRootDirectory>/.../<yourSolutionDirectory>/
-  - cd ./RevengeOfNewsChallengerBackEnd.Tests/
   # Use these to build the project without tests
-  - dotnet restore
-  - dotnet build
   # if your project has tests, you can skip "restore" and "build" and just use "test" command
-  - dotnet test
+  - ./backEndBuildTest
+  - ./frontEndBuildTest
