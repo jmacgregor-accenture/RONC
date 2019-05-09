@@ -16,5 +16,4 @@ script: # These commands are executed in the Travis VM just like you would on yo
   #- ./Scripts/frontEndBuildTest
   - ./Scripts/integrationBuildTest
   - ./Scripts/cleanUpScript
-addons:
-  firefox: "66"
+  
