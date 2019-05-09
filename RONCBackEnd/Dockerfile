@@ -8,7 +8,7 @@ RUN dotnet restore ./BackEndApp/RONCBackEnd.WebApi.csproj
 
 # copy everything else and build app
 COPY RONCBackEnd.WebApi/. ./BackEndApp/
-WORKDIR /app/BackEndApp/RONCBackEnd.WebApi/
+WORKDIR /app/BackEndApp/
 RUN dotnet publish -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS runtime
