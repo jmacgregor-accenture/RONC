@@ -22,7 +22,7 @@ ENTRYPOINT ["dotnet", "RONCBackEnd.WebApi.dll"]
 # Portforwarding breakthru
 # https://www.codemag.com/Article/1905091/Using-JetBrains-Rider-to-Develop-ASP.NET-Core-Applications-on-Docker
 
-
+# Halp
 # The yesterday GARBAGE
 
 #FROM microsoft/dotnet:sdk AS build-env
