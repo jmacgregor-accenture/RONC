@@ -13,7 +13,8 @@ namespace RONCFrontEnd.IntegrationTests
         [Fact]
         public void HomePageIsCorrect()
         {
-            var service = FirefoxDriverService.CreateDefaultService(Environment.CurrentDirectory, "geckodriver");   
+            // TODO something here, possibly the way we're getting the Environment.CurrentDirectory, is throwing a "System.ComponentModel.Win32Exception; exec format error"
+            var service = FirefoxDriverService.CreateDefaultService("/home/travis/build/dunn-accenture/RONC/RONCFrontEnd/RONCFrontEnd.IntegrationTests/bin/Debug/netcoreapp2.2/", "geckodriver");   
             var firefoxOptions = new FirefoxOptions();
             firefoxOptions.AddArgument("--headless");
             var webdriver = new FirefoxDriver(service,firefoxOptions);
